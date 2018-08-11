@@ -99,8 +99,11 @@ button {
 }
 
 .show {
-  color: #000;
+  color: #fff;
   background-color: #76CE82;
+  transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transform: rotateX(360deg);
+  z-index: -20;
 }
 
 /* Keyboard */

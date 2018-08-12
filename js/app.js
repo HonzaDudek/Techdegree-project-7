@@ -13,7 +13,7 @@ startButton.addEventListener("click", () => {
 });
 
 // List of phrases to be generated
-const phrases = ["Hello World", "What a beautiful day", "Keep on coding"];
+const phrases = ["Under the Bridge", "Parallel Universe", "Scar Tissue", "Californication", "By the Way"];
 
 // Function that generates random array from array, that is passed as a parameter
 
@@ -57,14 +57,13 @@ addPhraseToDisplay(randomPhrase);
 
 // Creating variable letters to store all elements from the <li> element with letters
 const letters = document.querySelectorAll(".letter");
-let letterFound = null;
-
 
 const checkLetter = (button) => {
+	let letterFound = null;
 	let buttonText = button.textContent;
 
 	// Looking for first match of the letters from array with pressed button
-    for (let i = 0; i < letters.length; i += 1)
+    for (let i = 0; i < letters.length; i++)
 	if (letters[i].textContent.toLocaleLowerCase() === buttonText) {
 		// Adds class "Show" to all the letters that match the selection
             letters[i].classList.add("show");
